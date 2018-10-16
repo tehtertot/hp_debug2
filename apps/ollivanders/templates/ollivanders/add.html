@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ollivander's Wand Shop</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+    <h1>Add a Wand</h1>
+    <form action="/wands/add" method="POST" class="col-sm-7">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="core">Core</label>
+            <select class="form-control" name="core">
+                <option value="unicorn hair">unicorn hair</option>
+                <option value="phoenix feather">phoenix feather</option>
+                <option value="dragon heartstring">dragon heartstring</option>
+                <option value="veela hair">veela hair</option>
+                <option value="thestral hair">thestral hair</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="length">Length</label>
+            <input type="text" name="length" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="wood">Wood</label>
+            <select class="form-control" name="wood">
+                <option value="acacia">acacia</option>
+                <option value="alder">alder</option>
+                <option value="apple">apple</option>
+                <option value="ash">ash</option>
+                <option value="aspen">aspen</option>
+                <option value="beech">beech</option>
+                <option value="blackthorn">blackthorn</option>
+                <option value="black walnut">black walnut</option>
+                <option value="cedar">cedar</option>
+                <option value="cherry">cherry</option>
+                <option value="chestnut">chestnut</option>
+                <option value="cypress">cypress</option>
+                <option value="dogwood">dogwood</option>
+                <option value="ebony">ebony</option>
+                <option value="elder">elder</option>
+                <option value="elm">elm</option>
+                <option value="English oak">English oak</option>
+                <option value="fir">fir</option>
+                <option value="hawthorn">hawthorn</option>
+                <option value="hazel">hazel</option>
+                <option value="holly">holly</option>
+                <option value="hornbeam">hornbeam</option>
+                <option value="larch">larch</option>
+                <option value="laurel">laurel</option>
+                <option value="maple">maple</option>
+                <option value="pear">pear</option>
+                <option value="pine">pine</option>
+                <option value="poplar">poplar</option>
+                <option value="red oak">red oak</option>
+                <option value="redwood">redwood</option>
+                <option value="rowan">rowan</option>
+                <option value="silver lime">silver lime</option>
+                <option value="spruce">spruce</option>
+                <option value="sycamore">sycamore</option>
+                <option value="vine">vine</option>
+                <option value="walnut">walnut</option>
+                <option value="willow">willow</option>
+                <option value="yew">yew</option>
+            </select>
+        </div>
+        <input type="submit" value="Add">
+    </form>
+    </div>
+</body>
+</html>
