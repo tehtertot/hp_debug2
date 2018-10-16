@@ -8,6 +8,5 @@ Students
 - Click on the student's name to show a page with all their info, including wand information
 - Click on "Remove Wand" to remove that wizard's wand
 ![](debug2.gif)
-BONUS
------
-- The list of wands should only be those that are unclaimed
+
+BONUS: The list of wands should only be those that are unclaimed
